@@ -1,0 +1,239 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif; /* Establece la fuente del cuerpo del documento */
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    background-color: #f8f9fa; /* Establece un color de fondo gris muy claro */
+    color: #495057; /* Establece el color principal del texto */
+    line-height: 1.6; /* Establece el espaciado entre líneas */
+    /* Imagen de fondo */
+    background-image: url('../img/logo.png'); /* Establece una imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-position: center center; /* Centra la imagen de fondo */
+    background-attachment: fixed; /* Mantiene la imagen de fondo fija durante el desplazamiento */
+    background-size: cover; /* Escala la imagen de fondo para cubrir todo el elemento */
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: rgba(0, 123, 255, 0.8); /* Establece un color de fondo azul transparente */
+    color: white; /* Establece el color del texto en la barra de navegación */
+    padding: 1em 0; /* Añade relleno vertical a la barra de navegación */
+    text-align: center; /* Centra el texto en la barra de navegación */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil a la barra de navegación */
+}
+
+.navbar ul {
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+    padding: 0; /* Elimina el relleno de la lista */
+    margin: 0; /* Elimina los márgenes de la lista */
+    display: flex; /* Utiliza Flexbox para el diseño */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.navbar li {
+    margin: 0 1.5em; /* Añade margen horizontal a los elementos de la lista */
+}
+
+.navbar a {
+    color: white; /* Establece el color del texto del enlace */
+    text-decoration: none; /* Elimina la decoración del texto del enlace */
+    padding: 0.7em 1.2em; /* Añade relleno al enlace */
+    border-radius: 0.25rem; /* Añade bordes redondeados al enlace */
+    transition: background-color 0.3s ease; /* Añade una transición suave al color de fondo */
+}
+
+.navbar a:hover {
+    background-color: rgba(0, 86, 179, 0.8); /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 960px; /* Establece un ancho máximo para el contenedor */
+    margin: 30px auto; /* Centra el contenedor horizontalmente con márgenes verticales */
+    padding: 30px; /* Añade relleno al contenedor */
+    background-color: white; /* Establece un color de fondo blanco */
+    border-radius: 0.5rem; /* Añade bordes redondeados al contenedor */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Añade una sombra al contenedor */
+    overflow-x: auto; /* IMPORTANTE: Habilita el scroll horizontal en el contenedor */
+}
+
+h1,
+h2 {
+    color: #343a40; /* Establece el color del texto de los encabezados */
+    text-align: center; /* Centra el texto de los encabezados */
+    margin-bottom: 25px; /* Añade margen inferior a los encabezados */
+}
+
+/* Estilos de Formulario */
+form label {
+    display: block; /* Hace que las etiquetas ocupen todo el ancho */
+    margin-bottom: 0.5em; /* Añade margen inferior a las etiquetas */
+    font-weight: bold; /* Hace que el texto de las etiquetas sea negrita */
+    color: #495057; /* Establece el color del texto de las etiquetas */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="tel"],
+form select {
+    width: calc(100% - 1rem); /* Hace que los campos de entrada ocupen todo el ancho menos 1 rem */
+    padding: 0.75rem; /* Añade relleno a los campos de entrada */
+    margin-bottom: 1rem; /* Añade margen inferior a los campos de entrada */
+    border: 1px solid #ced4da; /* Añade un borde a los campos de entrada */
+    border-radius: 0.25rem; /* Añade bordes redondeados a los campos de entrada */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+}
+
+form input:focus,
+form select:focus {
+    outline: none; /* Elimina el contorno predeterminado al enfocar */
+    border-color: #007bff; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Añade una sombra al enfocar */
+}
+
+form button {
+    background-color: #28a745; /* Establece un color de fondo verde */
+    color: white; /* Establece el color del texto del botón */
+    padding: 0.8rem 1.5rem; /* Añade relleno al botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 0.25rem; /* Añade bordes redondeados al botón */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-size: 1em; /* Establece el tamaño de la fuente del botón */
+    transition: background-color 0.3s ease; /* Añade una transición suave al color de fondo */
+}
+
+form button:hover {
+    background-color: #1e7e34; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Estilos para la Tabla de Listado */
+.container table {
+    display: block; /* IMPORTANTE: Permite el scroll horizontal */
+    width: auto; /* IMPORTANTE: La tabla se expande según su contenido */
+    border-collapse: collapse; /* Colapsa los bordes de la tabla */
+    margin-top: 2rem; /* Añade margen superior a la tabla */
+    border: 1px solid #dee2e6; /* Añade un borde a la tabla */
+    font-size: 0.9em; /* Reduce el tamaño de la fuente en la tabla */
+}
+
+.container table th,
+.container table td {
+    padding: 0.5rem; /* Reduce el relleno en las celdas de la tabla */
+    text-align: left; /* Alinea el texto a la izquierda */
+    border: 1px solid #dee2e6; /* Añade un borde a las celdas de la tabla */
+    white-space: nowrap; /* IMPORTANTE: Evita que el texto se envuelva */
+}
+
+.container table th {
+    background-color: #e9ecef; /* Establece un color de fondo claro para los encabezados */
+    font-weight: bold; /* Hace que el texto de los encabezados sea negrita */
+    color: #343a40; /* Establece el color del texto de los encabezados */
+}
+
+/* Estilos para los Botones de Acción */
+.actions a {
+    display: inline-block; /* Hace que los enlaces se comporten como bloques en línea */
+    margin-right: 0.5rem; /* Añade margen derecho a los enlaces */
+    padding: 0.5rem 0.8rem; /* Añade relleno a los enlaces */
+    text-decoration: none; /* Elimina la decoración del texto de los enlaces */
+    border-radius: 0.2rem; /* Añade bordes redondeados a los enlaces */
+    font-size: 0.9em; /* Reduce el tamaño de la fuente en los enlaces */
+}
+
+.actions .edit {
+    background-color: #007bff; /* Establece un color de fondo azul para el botón de editar */
+    color: white; /* Establece el color del texto para el botón de editar */
+}
+
+.actions .delete {
+    background-color: #dc3545; /* Establece un color de fondo rojo para el botón de eliminar */
+    color: white; /* Establece el color del texto para el botón de eliminar */
+}
+
+.actions a:hover {
+    opacity: 0.8; /* Reduce la opacidad al pasar el ratón */
+}
+
+/* Estilos para las Alertas */
+.alert {
+    padding: 1rem; /* Añade relleno a las alertas */
+    margin-bottom: 1.5rem; /* Añade margen inferior a las alertas */
+    border-radius: 0.25rem; /* Añade bordes redondeados a las alertas */
+}
+
+.alert-success {
+    background-color: #d4edda; /* Establece un color de fondo verde claro para las alertas de éxito */
+    color: #155724; /* Establece el color del texto para las alertas de éxito */
+    border: 1px solid #c3e6cb; /* Añade un borde a las alertas de éxito */
+}
+
+.alert-danger {
+    background-color: #f8d7da; /* Establece un color de fondo rojo claro para las alertas de error */
+    color: #721c24; /* Establece el color del texto para las alertas de error */
+    border: 1px solid #f5c6cb; /* Añade un borde a las alertas de error */
+}
+
+/* Estilos para el Video en la Página Principal */
+.intro-container {
+    display: flex; /* Utiliza Flexbox para el diseño */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Añade espacio entre los elementos */
+    margin-top: 20px; /* Añade margen superior */
+    text-align: center; /* Centra el texto */
+}
+
+.intro-video-container {
+    width: 100%; /* El video ocupa todo el ancho disponible */
+    max-width: 560px; /* Establece un ancho máximo para el video */
+}
+
+.intro-video-container video {
+    display: block; /* Evita espacios extra debajo del video */
+    width: 100%; /* El video se ajusta al ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente */
+    border-radius: 0.25rem; /* Añade bordes redondeados al video */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Añade una sombra sutil al video */
+}
+
+/* Diseño Responsive */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Apila los elementos del menú verticalmente */
+        align-items: center; /* Centra los elementos del menú horizontalmente */
+    }
+
+    .navbar li {
+        margin: 0.7em 0; /* Ajusta el margen de los elementos del menú */
+    }
+
+    .container {
+        padding: 20px; /* Reduce el relleno del contenedor */
+        margin: 20px auto; /* Ajusta los márgenes del contenedor */
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="date"],
+    form input[type="tel"],
+    form select {
+        width: calc(100% - 0.5rem); /* Ajusta el ancho de los campos de entrada */
+        padding: 0.6rem; /* Reduce el relleno de los campos de entrada */
+        margin-bottom: 0.8rem; /* Reduce el margen inferior de los campos de entrada */
+    }
+
+    .intro-video-container {
+        max-width: 100%; /* El video ocupa todo el ancho en pantallas pequeñas */
+    }
+
+    .container table {
+        font-size: 0.8em; /* Reduce el tamaño de la fuente en la tabla */
+    }
+
+    .container table th,
+    .container table td {
+        padding: 0.3rem; /* Reduce el relleno en las celdas de la tabla */
+    }
+}
